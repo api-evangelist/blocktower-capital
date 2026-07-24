@@ -1,8 +1,23 @@
 aid: blocktower-capital
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/blocktower-capital.png
 name: BlockTower Capital
-description: BlockTower Capital is a company surfaced as a portfolio company of a16z, union-square-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: BlockTower Capital was an institutional digital-asset investment management firm founded in
+  2017, running crypto hedge fund and venture strategies and backed by investors including Andreessen
+  Horowitz (a16z) and Union Square Ventures. As of April 30, 2025 the firm was acquired by and rebranded
+  as Arca; blocktower.com now 301-redirects to ar.ca and BlockTower no longer operates as a standalone
+  brand. The firm published no public API, developer portal, or SDK surface, so there is no API artifact
+  set to enrich here beyond identity and a domain-security probe of the still-resolving legacy domain.
 url: https://raw.githubusercontent.com/api-evangelist/blocktower-capital/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +26,23 @@ x-backed-by:
 - union-square-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-successor: arca
+x-successor-url: https://www.ar.ca
+x-acquired-date: '2025-04-30'
+x-has-api: false
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Cryptocurrency
+- Digital Assets
+- Investment Management
+- Blockchain
+- Venture Capital
+- Hedge Fund
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +50,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/blocktower-capital-domain-security.yml
 - type: Website
   url: https://blocktower.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
