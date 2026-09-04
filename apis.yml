@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://blocktower.com', status: 301, note: 'declared website redirects to https://www.ar.ca/arca-acquires-blocktower — a different registrable domain (blocktower.com -> ar.ca), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/blocktower-capital.png
 name: BlockTower Capital
 description: BlockTower Capital was an institutional digital-asset investment management firm founded in
